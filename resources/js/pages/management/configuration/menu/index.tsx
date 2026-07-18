@@ -177,7 +177,7 @@ export default function MenuIndex({
                                                 />
                                             </TableCell>
                                         </TableRow>
-                                        {menu.sub_menus?.map((sub) => (
+                                        {menu.sub_menus?.map((sub: MenuData) => (
                                             <TableRow
                                                 key={sub.id}
                                                 className="hover:bg-muted/10"

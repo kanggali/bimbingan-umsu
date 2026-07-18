@@ -22,6 +22,7 @@ import {
 import TableAction from '@/components/ui/table-action';
 import { useAccessUserStore } from '@/stores/useAccessUserStore';
 import type { AccessUserData } from '@/types/auth';
+import type { RoleData } from '@/types/role';
 import AccessUserFormModal from './form';
 import { useTranslation } from '@/hooks/use-translation';
 
@@ -145,7 +146,7 @@ export default function AccessUserIndex({
                                             {user.email}
                                         </TableCell>
                                         <TableCell>
-                                            {user.roles.map((role, i) => (
+                                            {user.roles.map((role: RoleData, i: number) => (
                                                 <span
                                                     key={role.id}
                                                     className={`inline-flex rounded-full px-2 py-0.5 text-xs font-medium capitalize bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400 ${i <

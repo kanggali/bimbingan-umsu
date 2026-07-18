@@ -12,15 +12,8 @@ import { useAccessUserStore } from '@/stores/useAccessUserStore';
 import type { MenuWithPermissions, Permission } from '@/types/access-role';
 import { ModalMode } from '@/types/enums';
 import type { RoleData } from '@/types/role';
+import type { AccessUserData } from '@/types/auth';
 import { useTranslation } from '@/hooks/use-translation';
-
-interface AccessUserData {
-    id: number;
-    name: string;
-    email: string;
-    roles: RoleData[];
-    permission_ids: number[];
-}
 
 interface Props {
     allMenus: MenuWithPermissions[];

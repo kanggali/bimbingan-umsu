@@ -20,7 +20,7 @@ import {
 } from '@/components/ui/table';
 import TableAction from '@/components/ui/table-action';
 import { useAccessRoleStore } from '@/stores/useAccessRoleStore';
-import type { AccessRoleData } from '@/types/auth';
+import type { AccessRoleData } from '@/types/access-role';
 import AccessRoleFormModal from './form';
 import { useTranslation } from '@/hooks/use-translation';
 

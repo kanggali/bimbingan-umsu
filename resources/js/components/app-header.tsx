@@ -137,7 +137,7 @@ export function AppHeader({ breadcrumbs = [] }: AppHeaderProps) {
                                                                     <Link
                                                                         href={subItem.url}
                                                                         className={cn(
-                                                                            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-neutral-100 hover:text-neutral-900 focus:bg-neutral-100 focus:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50 dark:focus:bg-neutral-800 dark:focus:text-neutral-50 flex items-center gap-2",
+                                                                            "select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-neutral-100 hover:text-neutral-900 focus:bg-neutral-100 focus:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50 dark:focus:bg-neutral-800 dark:focus:text-neutral-50 flex items-center gap-2",
                                                                             page.url === subItem.url && "bg-emerald-50 text-emerald-900 dark:bg-emerald-900/20 dark:text-emerald-100 font-medium"
                                                                         )}
                                                                     >
@@ -179,7 +179,7 @@ export function AppHeader({ breadcrumbs = [] }: AppHeaderProps) {
                                             {getInitials(auth.user.name)}
                                         </AvatarFallback>
                                     </Avatar>
-                                    <div className="flex flex-col items-start text-left hidden sm:flex">
+                                    <div className="hidden flex-col items-start text-left sm:flex">
                                         <span className="text-xs font-bold leading-none">{auth.user.name}</span>
                                         <span className="text-[10px] text-emerald-300 leading-none mt-1">{auth.user.email}</span>
                                     </div>
